@@ -1,0 +1,2 @@
+206.45.31.9 -> Bursts: 13, Long gaps: 0
+203.182.169.136 -> Bursts: 24, Long gaps: 0
