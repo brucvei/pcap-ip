@@ -46,6 +46,7 @@ windowed.to_csv('metricas/windowed_packets.csv')
 # CDF do tamanho de pacotes
 sorted_len = np.sort(df['length'])
 cdf = np.arange(len(sorted_len)) / float(len(sorted_len))
+np.savetxt('metricas/cdf_packet_sizes.csv', np.column_stack((sorted_len, cdf)), delimiter=',', header='Packet Size,CDF', comments='')
 
 # Skewness e Kurtosis do IPG
 ipg_skew = skew(df['ipg'])
